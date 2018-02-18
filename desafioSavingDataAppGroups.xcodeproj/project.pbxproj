@@ -47,6 +47,7 @@
 		92FC5C7E2039BF4A009D298A /* desafioSavingDataAppGroupsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = desafioSavingDataAppGroupsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FC5C822039BF4A009D298A /* desafioSavingDataAppGroupsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafioSavingDataAppGroupsUITests.swift; sourceTree = "<group>"; };
 		92FC5C842039BF4A009D298A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92FC5C902039C4C3009D298A /* desafioSavingDataAppGroups.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = desafioSavingDataAppGroups.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		92FC5C612039BF4A009D298A /* desafioSavingDataAppGroups */ = {
 			isa = PBXGroup;
 			children = (
+				92FC5C902039C4C3009D298A /* desafioSavingDataAppGroups.entitlements */,
 				92FC5C622039BF4A009D298A /* AppDelegate.swift */,
 				92FC5C642039BF4A009D298A /* ViewController.swift */,
 				92FC5C662039BF4A009D298A /* Main.storyboard */,
@@ -194,6 +196,11 @@
 					92FC5C5E2039BF4A009D298A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					92FC5C722039BF4A009D298A = {
 						CreatedOnToolsVersion = 9.2;
@@ -426,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = desafioSavingDataAppGroups/desafioSavingDataAppGroups.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5895XF33GD;
 				INFOPLIST_FILE = desafioSavingDataAppGroups/Info.plist;
@@ -441,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = desafioSavingDataAppGroups/desafioSavingDataAppGroups.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5895XF33GD;
 				INFOPLIST_FILE = desafioSavingDataAppGroups/Info.plist;

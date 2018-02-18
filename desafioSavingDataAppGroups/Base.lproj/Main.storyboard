@@ -49,6 +49,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="numeroVisitarStepper" destination="Byp-zu-UmE" id="WQa-j2-wsD"/>
                         <outlet property="numeroVisitasLabel" destination="hLt-Ce-fEd" id="2vA-ea-DGb"/>
                     </connections>
                 </viewController>
